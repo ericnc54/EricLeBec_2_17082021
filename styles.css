@@ -200,22 +200,20 @@ main h2 {
 	margin: 0;
 }
 #heberg {
-	margin-left: 50px;
-	margin-right: 50px;
 	display: flex;
-
+	margin: 2vw;
 }
 .heb {
 	display: flex;
 	flex-direction: column;
 	order: 1;
 	background-color: #f2f2f2;
-	margin-right: 50px;
-	padding: 50px;
+	padding: 1vw;
 	border-radius: 15px;
+	margin-right: 2vw;
 }
 .heb h2 {
-	margin-bottom: 50px;
+	margin-bottom: 1vw;
 }
 .heb h4 {
 	margin: 0;
@@ -223,7 +221,6 @@ main h2 {
 .card {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;	
 }
 .heb :nth-child(3) {
 	margin-top:auto;
@@ -232,12 +229,14 @@ main h2 {
 	background-color: white;
 	padding: 5px;
 	border-radius: 10px;
-	margin-bottom: 50px;
+	margin: 1vw;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 .cardheb div img {
-	width: 355px;
-	height: 145px;
+	width: 18vw;
+	height: 9vw;
+	min-height: 150px;
+	min-width: 350px;
 	object-fit: cover;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -251,16 +250,22 @@ main h2 {
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
+.cardheb h4 {
+	font-size: 1em;
+}
 .cardpop {
 	display: flex;
 	background-color: white;
+	margin: 1vw;
 	padding: 5px;
 	border-radius: 10px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 .cardpop div img {
-	width: 150px;
-	height: 150px;
+	width: 8vw;
+	height: 8vw;
+	min-width: 150px;
+	min-height: 150px;
 	object-fit: cover;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
@@ -268,7 +273,9 @@ main h2 {
 .textedroite {
 	display: flex;
 	flex-direction: column;
-	width: 250px;
+	width: 15vw;
+	min-width: 162px;
+	min-height: 150px;
 	padding: 5px;
 }
 .textedroite :nth-child(3) {
@@ -321,11 +328,13 @@ main h2 {
 .pop {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	order: 2;
 	background-color: #f2f2f2;
 	border-radius: 15px;
-	padding: 50px;
+	padding: 1vw;
+}
+.pop div h2 {
+	margin-bottom: 1vw;
 }
 .pop :first-child {
 	display: flex;
@@ -500,12 +509,7 @@ footer h4 {
 		order: 2;
 	}
 	.heb {
-		margin-right: 0;
-		border-radius: 0;
-		background-color: white;
-		padding: 15px;
-		height: fit-content;
-		flex-grow: 1;
+		
 	}
 	.pop {
 		order: 1;
@@ -590,18 +594,19 @@ footer h4 {
 	.card {
 		justify-content: center;
 	}
-	.cardheb {
-		margin-bottom: 15px;
-		margin-left: 15px;
-		margin-right: 15px;
-	}
 	.cardheb div img {
-		width: 350px;
-		height: 150px;
+		width: 90vw;
+		height: 35vw;
 	}
-	aside img {
-		width: 100px;
-		height: 100px;
+	.heb {
+		background-color: white;
+		margin: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.heb h2 {
+		margin-bottom: 5vw;
+		margin-top: 10vw;
 	}
 	footer {
 		flex-direction: column;
