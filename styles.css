@@ -55,7 +55,7 @@ header a {
 	text-decoration: none;
 }
 header h1 {
-	font-size: 1.6em;
+	font-size: 1.9em;
 	margin-bottom: 0;
 	margin-top: 50px;
 }
@@ -196,7 +196,7 @@ header h3 {
 	font-size: 1.2em;
 } 
 main h2 {
-	font-size: 1.4em;
+	font-size: 1.7em;
 	margin: 0;
 }
 #heberg {
@@ -210,15 +210,15 @@ main h2 {
 	flex-grow: 2;
 	background-color: #f2f2f2;
 	margin-right: 50px;
-	padding: 25px;
+	padding: 50px;
 	border-radius: 15px;
 }
 .pop {
 	order: 2;
 	flex-grow: 1;
 	background-color: #f2f2f2;
-	padding: 25px;
 	border-radius: 15px;
+	padding: 50px;
 }
 .pop :first-child {
 	display: flex;
@@ -247,12 +247,16 @@ footer div {
 }
 footer div p {
 	line-height: 75%;
+	font-size: 1.3em;
+}
+footer h4 {
+	font-size: 1.3em;
 }
 
 
 
 
-@media (max-width: 951px){
+@media all and (min-width: 601px) and (max-width: 951px) {
 	.menu div {
 		font-size: 1.1em;
 	}
@@ -279,8 +283,14 @@ footer div p {
 	.info i {
 		margin-top: 0px;
 	}
+	footer div p {
+		font-size: 0.9em;
+	}
+	footer h4 {
+		font-size: 1em;
+	}
 }
-@media (max-width: 600px) {
+@media all and (max-width: 600px) {
 	.menu div:nth-child(2) {
 		border-top: none;
 		border-bottom: 2px solid #0065FC;
@@ -333,7 +343,7 @@ footer div p {
 		margin-right: 15px;
 	}
 	header h3 {
-		font-size: 0.8em;
+		font-size: 1em;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
@@ -344,6 +354,9 @@ footer div p {
 	.info i {		
 		margin-top: -19px;		
 	}
+	.info div p {
+		font-size: 1em;
+	} 
 	section {
 		margin: 0;
 	}
@@ -393,15 +406,12 @@ footer div p {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
-	#filtres h3 {
-		padding: 0;
-		margin: 0;
-		margin-right: 20px;
-	}
 	#filtres button {
 		margin-left: 20px;
 		margin-right: 10px;
 		margin-bottom: 15px;
+		font-size: 1em;
+		padding-right: 12px;
 	}
 	#filtres div {
 		margin-right: 0;
@@ -410,15 +420,20 @@ footer div p {
 	#filtres h3 {
 		margin-right: 600px;
 		margin-bottom: 20px;
+		padding-left: 0;
+		margin-left: 0;
 	}
 	.search {
 		justify-content: center;
+		margin:15px;
+		margin-left: 0;
+		margin-right: 15px;
 	}
 	.searchTerm {
-		width: 200px;
+		width: 65vw;
 	}
 	::placeholder {
-		font-size: 1em;
+		font-size: 1.3em;
 	}
 	.searchButton {
 		display: none;
@@ -430,8 +445,8 @@ footer div p {
 		background-color:#0065FC;
     	color:#ffffff;
     	margin-left: -10px;
-    	border-top-right-radius: 10px;
-		border-bottom-right-radius: 10px;
+    	border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
 		font-size: 1.1em;
 	}
 	.searchButtonmob span i {
@@ -444,10 +459,16 @@ footer div p {
 	footer div {
 		width: auto;
 	}
+	footer div p {
+		font-size: 1em;
+	}
+	footer h4 {
+		font-size: 1em;
+	}
 }
-@media (min-width: 430px) and (max-width: 600px) {
+@media all and (min-width: 430px) and (max-width: 600px) {
 	.info i {		
-		margin-top: 0px;		
+		margin-top: 0px;
 	}
 
 }
