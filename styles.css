@@ -236,8 +236,8 @@ main h2 {
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 .cardheb div img {
-	width: 18vw;
-	height: 9vw;
+	width: 355px;
+	height: 145px;
 	object-fit: cover;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -259,8 +259,8 @@ main h2 {
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 .cardpop div img {
-	width: 8vw;
-	height: 8vw;
+	width: 150px;
+	height: 150px;
 	object-fit: cover;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
@@ -598,6 +598,10 @@ footer h4 {
 	.cardheb div img {
 		width: 350px;
 		height: 150px;
+	}
+	aside img {
+		width: 100px;
+		height: 100px;
 	}
 	footer {
 		flex-direction: column;
