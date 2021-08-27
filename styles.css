@@ -205,7 +205,7 @@ main h2 {
 }
 #heberg {
 	display: flex;
-	margin: 2vw;
+	margin: 50px;
 }
 .heb {
 	display: flex;
@@ -346,6 +346,7 @@ main h2 {
 	justify-content: space-between;
 }
 .pop :first-child i {
+	padding-bottom: 15px;
 	align-self: center;
 	font-size: 1.4em;
 }
@@ -367,8 +368,9 @@ footer div {
 	width: 30vw;
 }
 footer div p {
-	line-height: 75%;
+	line-height: 85%;
 	font-size: 1.3em;
+	padding-left: 0;
 }
 footer h4 {
 	font-size: 1.3em;
@@ -524,6 +526,7 @@ footer h4 {
 		order: 1;
 		border-radius: 0;
 		padding: 15px;
+		padding-top: 10vw;
 		height: fit-content;
 	}
 	#activ {
@@ -537,6 +540,7 @@ footer h4 {
 		font-size: 1.1em;
 	}
 	.pop :first-child i {
+		padding-bottom: 5vw;
 		font-size: 1.1em;
 	}
 	.pop :first-child {
@@ -637,6 +641,20 @@ footer h4 {
 	.cardheb div img {
 		width: 100%;
 	}
+	.cardpop {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	.cardpop div img {
+		min-width: 120px;
+	}
+	.textedroite p {
+		font-size: 0.9em;
+	}
+	.textedroite h4 {
+		margin-bottom: 2px;
+	}
 	footer {
 		flex-direction: column;
 		padding: 15px;
@@ -646,7 +664,6 @@ footer h4 {
 		width: auto;
 	}
 	footer div p {
-		padding-left: 0;
 		font-size: 1em;
 	}
 	footer h4 {
