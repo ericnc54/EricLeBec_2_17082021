@@ -296,6 +296,7 @@ main h2 {
 .cardpop {
 	display: flex;
 	background-color: white;
+	margin-bottom: 1vw;
 	padding: 5px;
 	border-radius: 20px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
