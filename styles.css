@@ -139,6 +139,10 @@ header h3 {
 	padding-top: 14px;
 	padding-bottom: 17px;
 }
+#filtres :nth-child(1) span {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 #filtres button {
 	font-family: raleway;
 	padding-top: 12px;
@@ -851,6 +855,18 @@ footer h4 {
 	#activ {
 		margin-left: 15px;
 		margin-right: 15px;
+	}
+	.activcard :nth-child(2) {
+		order: 2;
+	}
+	.activcard :nth-child(1) {
+		order: 1;
+	}
+	.activcard :nth-child(3) {
+		order: 3;
+	}
+	.activcard :nth-child(4) {
+		order: 4;
 	}
 	footer {
 		flex-direction: column;
