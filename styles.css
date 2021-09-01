@@ -218,6 +218,14 @@ main a :hover {
 	box-shadow: none;
 	transform: scale(1);
 }
+.cardactun :hover {
+	box-shadow: none;
+	transform: scale(1);
+}
+.cardactdeux :hover {
+	box-shadow: none;
+	transform: scale(1);
+}
 main h2 {
 	font-size: 1.7em;
 	margin: 0;
@@ -235,7 +243,6 @@ main h2 {
 	padding: 2vw;
 	border-radius: 15px;
 	margin-right: 2vw;
-	height: 45vw;
 }
 .heb h2 {
 	margin-bottom: 1vw;
@@ -247,11 +254,14 @@ main h2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	height: 35vw;
+}
+.card h4 {
+	margin-top: 2vw;
 }
 .cardheb {
+	margin: 1vw;
 	width: 18vw;
-	min-width: 170px;
+	min-width: 250px;
 	background-color: white;
 	padding: 5px;
 	border-radius: 20px;
@@ -289,10 +299,8 @@ main h2 {
 	transition-duration: 300ms;
 }
 .cardpop img {
-	width: 9vw;
-	height: 9vw;
-	min-width: 150px;
-	min-height: 100%;
+	height: 150px;
+	width: 30%;
 	object-fit: cover;
 	border-bottom-left-radius: 15px;
 	border-top-left-radius: 15px;
@@ -300,9 +308,7 @@ main h2 {
 .textedroite {
 	display: flex;
 	flex-direction: column;
-	width: 13vw;
-	min-width: 162px;
-	min-height: 150px;
+	width: 70%;
 	padding: 5px;
 }
 .textedroite :nth-child(3) {
@@ -353,6 +359,7 @@ main h2 {
 	color: #f2f2f2;
 }
 .pop {
+	width: 40vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -373,31 +380,79 @@ main h2 {
 	margin-right: 50px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	height: 40vw;
+}
+#activ h2 {
+	margin-bottom: 15px;
 }
 .activcard {
 	display: flex;
-	justify-content: space-around;
-
-}
-.activcard img {
-	height: 30vw;
-	width: 100%;
-}
-.activdouble img {
-	height: 13vw;
-	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .activdouble {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.cardact {
+.activcard article {
+	height: 30vw;
 	width: 20vw;
-	min-width: 200px;
+	min-width: 270px;
+	margin-bottom: 2vw;
+}
+.activdouble article {
+	height: 14vw;
+}
+
+.cardactun {
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	transition-timing-function: ease-in-out;
+	transition-duration: 300ms;
+}
+.cardactun img {
+	width: 100%;
+	height: 90%;
+	object-fit: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding-bottom: 10px;
+}
+.cardactun h4 {
+	margin: 0;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-size: 1em;
+}
+.cardactdeux {
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	transition-timing-function: ease-in-out;
+	transition-duration: 300ms;
+}
+.cardactdeux img {
+	width: 100%;
+	height: 80%;
+	object-fit: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding-bottom: 10px;
+}
+.cardactdeux h4 {
+	margin: 0;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-size: 1em;
+}
+span .cardactun {
+	height: 18vw;
+}
+span .cardactdeux {
+	height: 10vw;
+}
+.cardact {
 	background-color: white;
 	border-radius: 20px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -406,7 +461,7 @@ main h2 {
 }
 .cardact img {
 	width: 100%;
-	min-height: 150px;
+	height: 90%;
 	object-fit: cover;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -436,11 +491,7 @@ footer h4 {
 	font-size: 1.1em;
 	margin-bottom: 10px;
 }
-
-
-
-
-@media all and (min-width: 601px) and (max-width: 951px) {
+@media all and (min-width: 601px) and (max-width: 1220px) {
 	.menu div {
 		font-size: 1.1em;
 	}
@@ -481,22 +532,23 @@ footer h4 {
 		font-size: 1.4em;
 	}
 	#heberg {
-		margin-left: 15px;
-		margin-right: 15px;
-	}
-	#activ {
+		flex-direction: column;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
 	.pop {
-		padding: 15px;
+		width: 100%;
+		order: 1;
+		margin-bottom: 1vw;
+	}
+	.cardpop {
+		margin-bottom: 1vw;
 	}
 	.heb {
-		padding: 15px;
-		margin-right: 15px;
+		margin-right: 0;
 	}
 	.cardheb {
-		width: 100%;
+		width: 270px;
 	}
 	.cardheb div img {
 		width: 100%;
@@ -509,7 +561,7 @@ footer h4 {
 		font-size: 1em;
 	}
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 620px) {
 	.menu div:nth-child(2) {
 		border-top: none;
 		border-bottom: 2px solid #0065FC;
@@ -590,16 +642,7 @@ footer h4 {
 		padding-top: 10vw;
 		height: fit-content;
 	}
-	#activ {
-		border: none;
-		margin: 0;
-		border-radius: 0;
-		padding: 15px;
-		height: fit-content;
-	}
-	#activ h2 {
-		font-size: 1.1em;
-	}
+	
 	.pop :first-child i {
 		padding-bottom: 5vw;
 		font-size: 1.1em;
@@ -670,14 +713,15 @@ footer h4 {
 		margin: 0;
 		margin-left: 15px;
 		margin-right: 15px;
+		margin-top: 10vw;
 		padding: 0;
 	}
 	.heb h2 {
-		margin-bottom: 5vw;
-		margin-top: 10vw;
+		order: initial;
+		
 	}
 	.cardheb {
-		width: 100%;
+		width: 90vw;
 		min-width: 0;
 		margin-bottom: 15px;
 	}
@@ -702,13 +746,19 @@ footer h4 {
 	.cardheb div img {
 		width: 100%;
 	}
+	.pop {
+		width: 100%;
+	}
 	.cardpop {
 		width: 100%;
 		margin: 0;
 		margin-bottom: 15px;
 	}
 	.cardpop div img {
-		min-width: 120px;
+		width: 100px;
+	}
+	.textedroite {
+		width: 230px;
 	}
 	.textedroite p {
 		font-size: 0.9em;
@@ -735,7 +785,4 @@ footer h4 {
 	.info i {
 		margin-top: -30px;
 	}
-}
-@media all and (max-width: 360px) {
-	
 }
