@@ -173,9 +173,6 @@ header h3 {
 	margin-left: -25px;
 	border-radius: 50%;
 }
-.info {
-	margin-top: 30px;
-}
 .info span {
 	align-self: center;
 	border-radius: 50%;
@@ -200,6 +197,7 @@ header h3 {
 }
 .info {
 	display:flex;
+	margin-top: 30px;
 	margin-bottom: 30px;
 	
 }
@@ -542,7 +540,7 @@ footer h4 {
 		margin-right: 30px;
 	}
 	.info i {
-		margin-top: -12px;
+		margin-top: -10px;
 	}
 	header {
 		margin-left: 15px;
@@ -647,9 +645,6 @@ footer h4 {
 	}
 	.activcard {
 		justify-content: center;
-	}
-	.activcard :nth-child(2) {
-		order: 1;
 	}
 	.cardactdeux img {
 		height: 87%;		
@@ -760,6 +755,7 @@ footer h4 {
 		padding: 15px;
 		padding-top: 10vw;
 		height: fit-content;
+		width: 100%;
 	}
 	
 	.pop :first-child i {
@@ -846,7 +842,7 @@ footer h4 {
 		margin-bottom: 15px;
 	}
 	.textedroite {
-		width: auto;
+		width: 200px;
 		min-width: 0;
 	}
 	.textedroite p {
@@ -858,26 +854,9 @@ footer h4 {
 	.cardheb div img {
 		width: 100%;
 	}
-	.pop {
-		width: 100%;
-	}
-	.cardpop {
-		width: 100%;
-		margin: 0;
-		margin-bottom: 15px;		
-	}
 	.cardpop img {
 		width: 30%;
 		height: 130px;
-	}
-	.textedroite {
-		width: 200px;
-	}
-	.textedroite p {
-		font-size: 0.9em;
-	}
-	.textedroite h4 {
-		margin-bottom: 2px;
 	}
 	footer {
 		flex-direction: column;
