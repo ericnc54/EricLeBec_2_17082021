@@ -235,6 +235,7 @@ main a :hover {
 main h2 {
 	font-size: 1.7em;
 	margin: 0;
+	margin-bottom: 2vw;
 }
 #heberg {
 	display: flex;
@@ -243,15 +244,11 @@ main h2 {
 .heb {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	order: 1;
 	background-color: #f2f2f2;
 	padding: 2vw;
 	border-radius: 15px;
 	margin-right: 2vw;
-}
-.heb h2 {
-	margin-bottom: 1vw;
 }
 .heb h4 {
 	margin: 0;
@@ -259,13 +256,13 @@ main h2 {
 .card {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .card h4 {
 	margin-top: 2vw;
 }
 .cardheb {
-	margin: 1vw;
+	margin-bottom: 2vw;
 	width: 18vw;
 	min-width: 250px;
 	background-color: white;
@@ -306,8 +303,8 @@ main h2 {
 	transition-duration: 300ms;
 }
 .cardpop img {
-	height: 125px;
-	width: 30%;
+	height: 9vw;
+	width: 9VW;
 	object-fit: cover;
 	border-bottom-left-radius: 15px;
 	border-top-left-radius: 15px;
@@ -367,14 +364,17 @@ main h2 {
 	color: #f2f2f2;
 }
 .pop {
-	width: 40vw;
+	width: 50vw;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	
 	order: 2;
 	background-color: #f2f2f2;
 	border-radius: 15px;
 	padding: 2vw;
+}
+.pop article {
+	margin: auto;
 }
 .titrepop {
 	display: flex;
@@ -382,6 +382,12 @@ main h2 {
 }
 .titrepop h2 {
 	margin-bottom: 2vw;
+}
+.cardpopulaire {
+	display: flex;
+	flex-direction: column;
+	min-height: 33vw;
+	justify-content: space-between;
 }
 #activ {
 	margin-left: 50px;
@@ -510,11 +516,6 @@ footer h4 {
 	font-size: 1.1em;
 	margin-bottom: 10px;
 }
-@media all and (min-width: 2200px) {
-	.cardpop img {
-		height: 150px;
-	}
-}
 @media all and (max-width: 1370px) {
 	.menu div {
 		font-size: 1.1em;
@@ -565,17 +566,26 @@ footer h4 {
 		order: 1;
 		margin-bottom: 1vw;
 	}
-	.cardpop {
-		margin-bottom: 1vw;
+	.pop article {
+		width: 30vw;
+		margin-bottom: 5vw;
+	}
+	.cardpopulaire {
+		flex-direction: row;
+		min-height: 0px;
+	}
+	.textedroite div {
+		font-size: 0.9em;
 	}
 	.cardpop img {
-		height: 200px;
+		height: 10vw;
+		width: 10vw;
 	}
 	.heb {
 		margin-right: 0;
 	}
 	.cardheb {
-		width: 300px;
+		width: 30vw;
 	}
 	.cardheb div img {
 		width: 100%;
@@ -624,7 +634,33 @@ footer h4 {
 		font-size: 1em;
 	}
 }
+@media all and (max-width: 1155px) {
+	.cardpopulaire {
+		flex-direction: column;
+		min-height: 0px;
+	}
+	.textedroite div {
+		font-size: 1em;
+	}
+	.cardpop img {
+		height: 14vw;
+		width: 30vw;
+	}
+	.pop article {
+		width: 70vw;
+	}
+}
 @media all and (max-width: 865px) {
+	.cardpop img {
+		height: 14vw;
+		width: 30vw;
+	}
+	.pop article {
+		width: 94vw;
+	}
+	.cardheb {
+		width: 45vw;
+	}
 	.activcard span {
 		display: flex;
 		flex-direction: column;
@@ -757,16 +793,20 @@ footer h4 {
 		height: fit-content;
 		width: 100%;
 	}
+	.cardpopulaire {
+		font-size: 0.9em;
+	}
 	
 	.pop :first-child i {
-		padding-bottom: 5vw;
 		font-size: 1.3em;
+		padding-top: 1vw;
 	}
 	.pop h2 {
-		font-size: 1.1em;
+		font-size: 1.3em;
 	}
 	.pop article {
 		justify-content: flex-start;
+		width: 91vw;
 	}
 	#heberg {
 		flex-direction: column;
@@ -831,19 +871,30 @@ footer h4 {
 		margin-top: 10vw;
 		padding: 0;
 	}
+	.card {
+		justify-content: center;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 	.cardheb {
-		width: 90vw;
+		width: 91vw;
 		min-width: 0;
 		margin-bottom: 15px;
+	}
+	.cardheb p {
+		font-size: 0.8em;
+	}
+	.cardheb h4 {
+		font-size: 0.9em;
+	}
+	.cardheb img {
+		height: 50vw;
+		width: 100%;
 	}
 	.cardpop {
 		width: 100%;
 		margin: 0;
 		margin-bottom: 15px;
-	}
-	.textedroite {
-		width: 200px;
-		min-width: 0;
 	}
 	.textedroite p {
 		font-size: 0.9em;
@@ -851,18 +902,60 @@ footer h4 {
 	.textedroite h4 {
 		margin-bottom: 2px;
 	}
-	.cardheb div img {
-		width: 100%;
-	}
 	.cardpop img {
-		width: 30%;
-		height: 130px;
+		width:30VW;
+		height: 30vw;
+	}
+	.activcard span {
+		display: flex;
+		flex-direction: column;
+	}
+	span .cardactun {
+		height: 70vw;
+		margin-right: auto;
+	}
+	span .cardactdeux {
+		height: 70vw;
+		margin-right: auto;		
+	}
+	span .cardacttrois {
+		height: 70vw;
+		margin-right: auto;
+	}
+	.cardactgrand {
+		margin-right: 0px;
+	}
+	.activcard {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.activcard article {
+		height: 70vw;
+		width: 91vw;
+		margin-bottom: 20px;
+	}
+	.activcard article h4 {
+		margin: revert;
+	}
+	.activcard article img {
+		padding-bottom: 0;
+	}
+	.cardactun img {
+		height: 50vw;
+	}
+	.cardactdeux img {
+		height: 50vw;		
+	}
+	.cardacttrois img {
+		height: 50vw;
+	}
+	.cardactgrand img {
+		height: 50vw;
 	}
 	footer {
 		flex-direction: column;
 		padding: 15px;
-	}
-	
+	}	
 	footer div {
 		width: auto;
 	}
@@ -876,5 +969,8 @@ footer h4 {
 @media all and (max-width: 473px) {
 	.info i {
 		margin-top: -30px;
+	}
+	.textedroite div {
+		font-size: 0.8em;
 	}
 }
