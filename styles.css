@@ -398,6 +398,12 @@ main h2 {
 #activ h2 {
 	margin-bottom: 2vw;
 }
+.inegale .cardactun {
+	height: 18vw;
+}
+.inegale .cardactdeux {
+	height: 10vw;
+}
 .activcard {
 	display: flex;
 	justify-content: space-between;
@@ -449,13 +455,7 @@ main h2 {
 	padding-left: 10px;
 	font-size: 1em;
 }
-span .cardactun {
-	height: 18vw;
-}
-span .cardactdeux {
-	height: 10vw;
-}
-span .cardacttrois {
+.egale .cardacttrois {
 	height: 14vw;
 }
 .cardactgrand {
@@ -593,20 +593,20 @@ footer h4 {
 	}
 	.cardheb div img {
 		width: 100%;
-		min-width: none;
+		min-width: 0px;
 	}
-	.activcard span {
+	.activcard div {
 		display: flex;
 	}
-	span .cardactun {
+	.inegale .cardactun {
 		height: 30vw;
 		margin-right: 1.2vw;
 	}
-	span .cardactdeux {
+	.inegale .cardactdeux {
 		height: 30vw;
 		margin-right: 1.2vw;		
 	}
-	span .cardacttrois {
+	.egale .cardacttrois {
 		height: 30vw;
 		margin-right: 1.2vw;
 	}
@@ -665,17 +665,17 @@ footer h4 {
 	.cardheb {
 		width: 45vw;
 	}
-	.activcard span {
+	.activcard div {
 		display: flex;
 		flex-direction: column;
 	}
-	span .cardactun {
+	.inegale .cardactun {
 		height: 70vw;
 	}
-	span .cardactdeux {
+	.inegale .cardactdeux {
 		height: 70vw;		
 	}
-	span .cardacttrois {
+	.egale .cardacttrois {
 		height: 70vw;
 	}
 	.activcard article {
@@ -923,20 +923,17 @@ footer h4 {
 		width: 35vw;
 		height: 35vw;
 	}
-	.activcard span {
+	.activcard div {
 		display: flex;
 		flex-direction: column;
 	}
-	span .cardactun {
-		height: 70vw;
+	.cardactun {
 		margin-right: auto;
 	}
-	span .cardactdeux {
-		height: 70vw;
+	.cardactdeux {
 		margin-right: auto;		
 	}
-	span .cardacttrois {
-		height: 70vw;
+	.cardacttrois {
 		margin-right: auto;
 	}
 	.cardactgrand {
@@ -950,6 +947,18 @@ footer h4 {
 		height: 55vw;
 		width: 91vw;
 		margin-bottom: 20px;
+	}
+	.inegale .cardactun {
+		height: 55vw;
+		width: 91vw;
+	}
+	.inegale .cardactdeux {
+		height: 55vw;
+		width: 91vw;
+	}
+	.egale .cardacttrois {
+		height: 55vw;
+		width: 91vw;
 	}
 	.activcard article h4 {
 		margin: revert;
