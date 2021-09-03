@@ -516,7 +516,7 @@ footer h4 {
 	font-size: 1.1em;
 	margin-bottom: 10px;
 }
-@media all and (max-width: 1370px) {
+@media all and (max-width: 1360px) {
 	.menu div {
 		font-size: 1.1em;
 	}
