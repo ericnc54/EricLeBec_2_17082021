@@ -1,3 +1,4 @@
+/*  STYLES GENERAUX  ************************************************************************************************************************/
 * {
 	box-sizing: border-box;
 }
@@ -5,54 +6,38 @@ body {
 	font-family: 'Raleway', sans-serif;
 	margin: 0;	
 }
-main a {
-	text-decoration: none;
-	color: inherit;
+main a :hover {
+	box-shadow: 8px 8px 20px #deebff;
+	transform: scale(1.1);
 }
+.cardheb :hover {
+	box-shadow: none;
+	transform: scale(1);
+}
+.cardpop :hover {
+	box-shadow: none;
+	transform: scale(1);
+}
+.cardacttrois :hover {
+	box-shadow: none;
+	transform: scale(1);
+}
+.cardactgrand :hover {
+	box-shadow: none;
+	transform: scale(1);
+}
+.cardactun :hover {
+	box-shadow: none;
+	transform: scale(1);
+}
+.cardactdeux :hover {
+	box-shadow: none;
+	transform: scale(1);
+}
+/*  HEADER concentre les outils de navigation du site  *************************************************************************************/
 header {
 	margin-left: 50px;
 	margin-right: 50px;
-}
-.menu {
-	display: flex;
-	justify-content: space-between;
-	height: 100px;
-}
-.menu a:visited {
-	color: #0065fc;
-}
-.menu div:first-child img {
-	width: 150px;
-}
-.menu div:first-child {
-	flex-grow: 1;
-	align-self: flex-end;
-	margin: 0;
-}
-.menu div:nth-child(4) a {
-	font-weight: 700;
-	color: #0065FC;	
-}
-.menu div:nth-child(3) a {
-	color: gray;	
-}
-.menu div:nth-child(2) {
-	border-top: 2px solid #0065FC;
-	padding-top: 40px;
-	padding-right: 20px;
-	padding-left: 20px;
-	margin-right: 90px;
-}
-.menu div:nth-child(3){
-	padding-top: 42px;
-	margin-right: 110px;
-}
-.menu div:nth-child(4) {
-	padding-top: 42px;
-	margin-right: 20px;
-}
-.menu div {
-	font-size: 1.2em;
 }
 header a {
 	text-decoration: none;
@@ -67,7 +52,49 @@ header h3 {
 	font-size: 1.1em;
 	margin-top: 0;
 }
-
+/*  nav  ************************************************************************/
+.menu {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+}
+.menu a:visited {
+	color: #0065fc;
+}
+.menu :first-child img {
+	width: 150px;
+}
+.menu :first-child {
+	flex-grow: 1;
+	align-self: flex-end;
+	margin: 0;
+}
+.menu :nth-child(4) a {
+	font-weight: 700;
+	color: #0065FC;	
+}
+.menu :nth-child(3) a {
+	color: gray;	
+}
+.menu :nth-child(2) {
+	border-top: 2px solid #0065FC;
+	padding-top: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-right: 90px;
+}
+.menu :nth-child(3){
+	padding-top: 42px;
+	margin-right: 110px;
+}
+.menu :nth-child(4) {
+	padding-top: 42px;
+	margin-right: 20px;
+}
+.menu {
+	font-size: 1em;
+}
+/*  barre de recherche  ***********************************************************/
 .search {
     width: 100%;
     position: relative;
@@ -111,6 +138,7 @@ header h3 {
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
+/*  filtres  **********************************************************************/
 #filtres {
 	display: flex;
 	flex-wrap: wrap;
@@ -173,6 +201,7 @@ header h3 {
 	margin-left: -25px;
 	border-radius: 50%;
 }
+/*  information  **********************************************************************/
 .info span {
 	align-self: center;
 	border-radius: 50%;
@@ -204,43 +233,22 @@ header h3 {
 .info div p {
 	font-size: 1.1em;
 }
-main a :hover {
-	box-shadow: 8px 8px 20px #deebff;
-	transform: scale(1.1);
-}
-.cardheb :hover {
-	box-shadow: none;
-	transform: scale(1);
-}
-.cardpop :hover {
-	box-shadow: none;
-	transform: scale(1);
-}
-.cardacttrois :hover {
-	box-shadow: none;
-	transform: scale(1);
-}
-.cardactgrand :hover {
-	box-shadow: none;
-	transform: scale(1);
-}
-.cardactun :hover {
-	box-shadow: none;
-	transform: scale(1);
-}
-.cardactdeux :hover {
-	box-shadow: none;
-	transform: scale(1);
+/*  MAIN concentre les informations importantes du site  **********************************************************************************************/
+main a {
+	text-decoration: none;
+	color: inherit;
 }
 main h2 {
 	font-size: 1.7em;
 	margin: 0;
 	margin-bottom: 2vw;
 }
+/*  1ère partie HEBERGEMENT  ************************************************************/
 #heberg {
 	display: flex;
 	margin: 50px;
 }
+/*  section Hebergement  ******************************/
 .heb {
 	display: flex;
 	flex-direction: column;
@@ -292,6 +300,33 @@ main h2 {
 .cardheb h4 {
 	font-size: 1em;
 }
+/*  aside les plus populaires  **************************/
+.pop {
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	
+	order: 2;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	padding: 2vw;
+}
+.pop article {
+	margin: auto;
+}
+.titrepop {
+	display: flex;
+	justify-content: space-between;
+}
+.titrepop h2 {
+	margin-bottom: 2vw;
+}
+.cardpopulaire {
+	display: flex;
+	flex-direction: column;
+	min-height: 33vw;
+	justify-content: space-between;
+}
 .cardpop {
 	display: flex;
 	background-color: white;
@@ -330,6 +365,7 @@ main h2 {
 	padding-left: 4px;
 	font-weight: bold;
 }
+/*  les étoiles  ******************************************/
 .fourstars {
 	display: flex;
 	padding-left: 10px;
@@ -363,32 +399,7 @@ main h2 {
 .threestars :nth-child(4) {
 	color: #f2f2f2;
 }
-.pop {
-	width: 50vw;
-	display: flex;
-	flex-direction: column;
-	
-	order: 2;
-	background-color: #f2f2f2;
-	border-radius: 15px;
-	padding: 2vw;
-}
-.pop article {
-	margin: auto;
-}
-.titrepop {
-	display: flex;
-	justify-content: space-between;
-}
-.titrepop h2 {
-	margin-bottom: 2vw;
-}
-.cardpopulaire {
-	display: flex;
-	flex-direction: column;
-	min-height: 33vw;
-	justify-content: space-between;
-}
+/*  deuxième partie section activites  **********************************************************/
 #activ {
 	margin-left: 50px;
 	margin-right: 50px;
@@ -428,11 +439,11 @@ main h2 {
 	object-fit: cover;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	padding-bottom: 10px;
 }
 .cardactun h4 {
 	margin: auto;
 	padding-left: 10px;
+	padding-top: 0.4vw;
 	font-size: 1em;
 }
 .cardactdeux {
@@ -448,12 +459,12 @@ main h2 {
 	object-fit: cover;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	padding-bottom: 10px;
 }
 .cardactdeux h4 {
 	margin: auto;
 	padding-left: 10px;
 	font-size: 1em;
+	padding-top: 0.4vw;
 }
 .egale .cardacttrois {
 	height: 14vw;
@@ -471,12 +482,12 @@ main h2 {
 	object-fit: cover;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	padding-bottom: 10px;
 }
 .cardactgrand h4 {
 	margin: auto;
 	padding-left: 10px;
 	font-size: 1em;
+	padding-top: 0.4vw;
 }
 .cardacttrois {
 	background-color: white;
@@ -491,13 +502,14 @@ main h2 {
 	object-fit: cover;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	padding-bottom: 10px;
 }
 .cardacttrois h4 {
 	margin: auto;
 	padding-left: 10px;
 	font-size: 1em;
+	padding-top: 0.4vw;
 }
+/*  FOOTER  ************************************************************************************************************************************************/
 footer {
 	display: flex;
 	background-color: #f2f2f2;
@@ -508,13 +520,17 @@ footer div {
 	width: 30vw;
 }
 footer div p {
-	line-height: 90%;
 	font-size: 1.1em;
 	padding-left: 0;
 }
 footer h4 {
 	font-size: 1.1em;
-	margin-bottom: 10px;
+}
+/*  LA PARTIE RESPONSIVE  **********************************************************************************************************************************/
+@media all and (max-width: 1700px) {
+	.cardpopulaire {
+		min-height: 37vw;
+	}
 }
 @media all and (max-width: 1360px) {
 	.menu div {
@@ -623,13 +639,20 @@ footer h4 {
 		order: 1;
 	}
 	.cardactdeux img {
-		height: 87%;		
+		height: 87%;
+		padding-bottom: 5px;		
+	}
+	.cardactun img {
+		height: 87%;
+		padding-bottom: 5px;		
 	}
 	.cardacttrois img {
 		height: 87%;
+		padding-bottom: 5px;
 	}
 	.cardactgrand img {
 		height: 87%;
+		padding-bottom: 5px;
 	}
 	footer div p {
 		font-size: 0.9em;
@@ -685,6 +708,13 @@ footer h4 {
 	}
 	.activcard {
 		justify-content: center;
+	}
+	.activcard article img {
+		padding-bottom: 0;
+	}
+	.activcard article h4 {
+		margin: revert;
+		padding-top: 0px;
 	}
 	.cardactdeux img {
 		height: 87%;		
@@ -959,12 +989,6 @@ footer h4 {
 	.egale .cardacttrois {
 		height: 55vw;
 		width: 91vw;
-	}
-	.activcard article h4 {
-		margin: revert;
-	}
-	.activcard article img {
-		padding-bottom: 0;
 	}
 	.cardactun img {
 		height: 35vw;

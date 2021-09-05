@@ -4,16 +4,21 @@
 		<title>Reservia</title>
 		<meta charset="utf-8">
 		<meta name="description" lang="fr" content="Planification des activités et réservation de logements de vacances">
+		<!--  Adaptation du View Port pour responsivité sur mobile  -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--  Appel de la feuille de style locale  -->
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<!--  Chargement de la police Raleway sur google  -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+		<!--  Chargement du lien de la bibliothèque fontawesome  -->
 		<script src="https://kit.fontawesome.com/31b83dd3b8.js" crossorigin="anonymous"></script>
+		<!--  Chargement du favicon du site  -->
 		<link rel="shortcut icon" type="image/jpg" href="images/Reservia_favicon.svg"/>
 	</head>
 	<body>
-		<header>
+		<header> <!--  les outils de navigation sur le site sont dans le header  -->
 			<nav class="menu">
 				<div>
 					<img src="images/Reservia.svg" alt="logo">
@@ -29,16 +34,13 @@
 				</div>
 			</nav>
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-			<h3>En plein centre ville ou en pleine nature</h3>
-			<div class="wrap">
-				<div class="search">
-					<span><i class="fas fa-map-marker-alt fa-lg"></i></span>
-        			<input type="text" class="searchTerm" placeholder="Marseille, France">
-        			<button type="submit" class="searchButton">Rechercher</button>
-					<button type="submit" class="searchButtonmob"><span><i class="fas fa-search"></i></span>
-        			</button>
-      			</div>
-    		</div>
+			<h3>En plein centre ville ou en pleine nature</h3>			
+			<div class="search">
+				<span><i class="fas fa-map-marker-alt fa-lg"></i></span>
+        		<input type="text" class="searchTerm" placeholder="Marseille, France">
+        		<button type="submit" class="searchButton">Rechercher</button>
+				<button type="submit" class="searchButtonmob"><span><i class="fas fa-search"></i></span></button>
+      		</div>    		
 			<div id="filtres">
 				<h3>Filtres</h3>
 				<div>
@@ -61,7 +63,7 @@
 				</div>
 			</div>		
 		</header>
-		<main>
+		<main> <!--  Le contenu principal du site est dans le MAIN  -->
 			<div id="heberg">
 				<aside class="pop">
 					<div class="titrepop">			
@@ -256,7 +258,7 @@
 				</div>
 			</section>
 		</main>
-		<footer>
+		<footer> <!--  les liens vers les différentes pages du site  -->
 			<div>
 				<h4>À propos</h4>
 				<p>Fonctionnement du site</p>
